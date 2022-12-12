@@ -141,3 +141,25 @@ body {
     width: 100%;
   }
 }
+
+.career {
+  width: 50%;
+  display: flex;
+
+  &__title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: var(--weight);
+    width: 30%;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  &__lists {
+    list-style: none;
+  }
+
+  &__list {
+    margin-bottom: 0.5rem;
+  }
+}

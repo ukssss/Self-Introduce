@@ -129,4 +129,23 @@ body {
   width: 100%;
 }
 
+.career {
+  width: 50%;
+  display: flex;
+}
+.career__title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: var(--weight);
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid rgb(0, 0, 0);
+}
+.career__lists {
+  list-style: none;
+}
+.career__list {
+  margin-bottom: 0.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */

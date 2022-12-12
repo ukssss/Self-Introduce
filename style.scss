@@ -1,9 +1,143 @@
-$color: red;
+/* Default */
+$bgColor: white;
+$weight: 600;
 
-h1 {
-  color: $color;
+html,
+body {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-p {
-  color: $color;
+/* Navigation */
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $bgColor;
+  z-index: 99;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: var(--weight);
+}
+
+/* Guide */
+#guide {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.guide-main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+
+  &__hello {
+    display: block;
+    font-size: 3.125rem;
+    font-weight: 600;
+  }
+
+  &__scroll {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.guide-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__scrollImg {
+    margin-top: 5.1rem;
+    width: 45rem;
+    bottom: 0;
+    -webkit-animation: scale-up-br 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-br 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both infinite;
+    animation-duration: 3s;
+  }
+}
+
+@-webkit-keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+
+/* Profile */
+#profile {
+  position: relative;
+  padding: 0rem 5rem 0rem 5rem;
+  height: 110vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-img {
+  &__main {
+    width: 25rem;
+    border-radius: 50%;
+  }
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+
+  &__hello,
+  &__promise {
+    font-size: 1.15rem;
+    font-weight: var(--weight);
+  }
+
+  &__career {
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
 }

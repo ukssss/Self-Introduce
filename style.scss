@@ -1,6 +1,6 @@
 /* Default */
 $bgColor: white;
-$weight: 600;
+$weight: 700;
 
 html,
 body {
@@ -130,7 +130,7 @@ body {
   &__hello,
   &__promise {
     font-size: 1.15rem;
-    font-weight: var(--weight);
+    font-weight: $weight;
   }
 
   &__career {
@@ -149,7 +149,7 @@ body {
   &__title {
     display: block;
     font-size: 1.5rem;
-    font-weight: var(--weight);
+    font-weight: $weight;
     width: 30%;
     text-align: center;
     border-right: 1px solid rgba(0, 0, 0, 1);
@@ -162,4 +162,52 @@ body {
   &__list {
     margin-bottom: 0.5rem;
   }
+}
+
+/* Hobby */
+#hobby {
+  margin-top: 12rem;
+  position: relative;
+  padding: 0rem 6rem 0rem 6rem;
+  height: 100vh;
+  display: flex;
+}
+
+.hobby-main {
+  width: 100%;
+}
+
+.hobby-lists {
+  padding: 3rem 0rem 0rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.hobby-list {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__info {
+    margin-top: 1.875rem;
+    width: 25rem;
+  }
+
+  &__title {
+    font-size: 1.875rem;
+    font-weight: $weight;
+  }
+
+  &__content {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.hobby-img {
+  width: 25rem;
+  height: 25rem;
 }

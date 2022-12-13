@@ -193,4 +193,95 @@ body {
   height: 25rem;
 }
 
+/* Schedule */
+#schedule {
+  margin-top: 12rem;
+  padding-left: 6.25rem;
+  height: 130vh;
+  position: relative;
+}
+
+.schedule-table {
+  width: 100%;
+  padding: 0rem 18rem 0rem 0rem;
+}
+.schedule-table thead {
+  height: 6.25rem;
+  font-size: 1.5rem;
+}
+.schedule-table__part {
+  text-align: center;
+}
+.schedule-table__part-img {
+  width: 6rem;
+}
+.schedule-table__part-img:hover {
+  animation: iconJump 1s ease-in-out;
+}
+.schedule-table__target {
+  text-align: center;
+  width: 10rem;
+  padding: 0rem 5rem 0rem 5rem;
+}
+.schedule-table__contents {
+  text-align: start;
+}
+.schedule-table__contents ul {
+  list-style: none;
+  padding-left: 0;
+}
+.schedule-table__contents ul li {
+  margin-bottom: 0.625rem;
+}
+
+/* Schedule */
+#schedule {
+  margin-top: 12rem;
+  padding-left: 6.25rem;
+  height: 130vh;
+  position: relative;
+}
+
+.schedule-table {
+  width: 100%;
+  padding: 0rem 18rem 0rem 0rem;
+}
+.schedule-table thead {
+  height: 6.25rem;
+  font-size: 1.5rem;
+}
+.schedule-table__part {
+  text-align: center;
+}
+.schedule-table__target {
+  text-align: center;
+  width: 10rem;
+  padding: 0rem 5rem 0rem 5rem;
+}
+.schedule-table__contents {
+  text-align: start;
+}
+.schedule-table__part-ing {
+  width: 6rem;
+}
+.schedule-table__part-ing:hover {
+  animation: iconJump 1s ease-in-out;
+}
+.schedule-table ul {
+  list-style: none;
+  padding-left: 0;
+}
+.schedule-table ul li {
+  margin-bottom: 0.625rem;
+}
+
+.schedule-deco {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.schedule-deco__img {
+  width: 20rem;
+}
+
 /*# sourceMappingURL=style.css.map */

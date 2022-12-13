@@ -1,0 +1,18 @@
+/* Navigation */
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $bgColor;
+  z-index: 99;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: $weight;
+}

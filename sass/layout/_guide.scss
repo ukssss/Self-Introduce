@@ -1,0 +1,72 @@
+/* Guide */
+#guide {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.guide-main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+
+  &__hello {
+    display: block;
+    font-size: 3.125rem;
+    font-weight: 600;
+  }
+
+  &__scroll {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.guide-img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__scrollImg {
+    margin-top: 5.1rem;
+    width: 45rem;
+    bottom: 0;
+    -webkit-animation: scale-up-br 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-br 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both infinite;
+    animation-duration: 3s;
+  }
+}
+
+@-webkit-keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes scale-up-br {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+  }
+}

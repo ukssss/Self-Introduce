@@ -1,0 +1,24 @@
+@import "./abstracts/variables";
+
+@import "./base/normalize";
+// @import "./base/reset";
+@import "./base/animation";
+
+@import "./components/navigation";
+@import "./components/scroll";
+
+@import "./layout/guide";
+@import "./layout/hobby";
+@import "./layout/link";
+@import "./layout/no-mobile";
+@import "./layout/profile";
+@import "./layout/schedule";
+
+html,
+body {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}

@@ -1,0 +1,60 @@
+/* Profile */
+#profile {
+  position: relative;
+  padding: 0rem 5rem 0rem 5rem;
+  height: 110vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-img {
+  &__main {
+    width: 25rem;
+    border-radius: 50%;
+  }
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem;
+
+  &__hello,
+  &__promise {
+    font-size: 1.15rem;
+    font-weight: $weight;
+  }
+
+  &__career {
+    margin-top: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+.career {
+  width: 50%;
+  display: flex;
+
+  &__title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: $weight;
+    width: 30%;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, 1);
+  }
+
+  &__lists {
+    list-style: none;
+  }
+
+  &__list {
+    margin-bottom: 0.5rem;
+  }
+}

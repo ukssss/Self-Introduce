@@ -1,0 +1,71 @@
+/* Schedule */
+#schedule {
+  margin-top: 12rem;
+  padding-left: 6.25rem;
+  height: 130vh;
+  position: relative;
+}
+
+.schedule-table {
+  width: 100%;
+  padding: 0rem 18rem 0rem 0rem;
+
+  thead {
+    height: 6.25rem;
+    font-size: 1.5rem;
+  }
+
+  &__part {
+    text-align: center;
+
+    &-img {
+      width: 6rem;
+
+      &:hover {
+        animation: iconJump 1s ease-in-out;
+      }
+    }
+  }
+
+  &__target {
+    text-align: center;
+    width: 10rem;
+    padding: 0rem 5rem 0rem 5rem;
+  }
+
+  &__contents {
+    text-align: start;
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.625rem;
+      }
+    }
+  }
+}
+
+.schedule-deco {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &__img {
+    width: 20rem;
+  }
+}
+
+/* Keyframes */
+@keyframes iconJump {
+  0% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
